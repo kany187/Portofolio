@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/*  Header -------------------*/
+a {
+  text-decoration: none;
+}
+
+.left a {
+  color: #000;
+}
+
+.right a {
+  color: #000;
+}
+
+
+.left li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  padding-bottom: 19px;
+  position: relative;
+  top: -50px;
+  float: right;
+  text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
+}
+
+.right {
+  margin-left: 15px;
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.rounded img {
+  max-width: 100%;
+
+}
+
+.rounded {
+  position: relative;
+  overflow: hidden;
+}
+
+.rounded:nth-of-type(1) {
+  width: 100%;
+}
+
+.rounded:nth-of-type(2) {
+  width: 50%;
+  float: left;
+  position: relative;
+  top: -4px;
+}
+
+.rounded:nth-of-type(3) {
+  width: 50%;
+  float: right;
+  position: relative;
+  top: -4px;
+}
+
+.rounded:nth-of-type(4) {
+  width: 50%;
+  float: left;
+  position: relative;
+  top: -8px;
+
+}
+
+.rounded:nth-of-type(5) {
+  width: 50%;
+  float: right;
+  position: relative;
+  top: -8px;
+}
+
+.clearfix:after {
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+
+.overlay{
+  color: #fff;
+  background: #345d88;
+  opacity: 0;
+  transition: opacity .5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex; /* For centering text inside .photo-overlay */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, .5);
+  padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+.slide .overlay {
+  opacity: 1;
+}
+
+.button {
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 100%;
+  border: 1px solid;
+  padding: 10px;
+  background: #BDBEB8;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+}
+
+.button:hover {
+  background: #fff;
+}
+
+.rounded h1 {
+    font-family: 'Courgette', cursive;
+}
+
+footer {
+  height: 50px;
+  border-top: 1px solid #BDBEB8;
+}
+
+footer p {
+  margin-left: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*  Media query -------------------*/
+
+@media (max-width: 812px) {
+
+  main {
+    padding-top: 30px;
+  }
+  .rounded h1{
+    font-size: 1rem;
+  }
+
+  .button {
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 100%;
+    border: 1px solid;
+    padding: 2px;
+    background: #BDBEB8;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .rounded:nth-of-type(1) {
+    width: 100%;
+  }
+
+  .rounded:nth-of-type(2) {
+    width: 50%;
+    float: left;
+    position: relative;
+    top: -4px;
+  }
+
+  .rounded:nth-of-type(3) {
+    width: 50%;
+    float: right;
+    position: relative;
+    top: -4px;
+  }
+
+  .rounded:nth-of-type(4) {
+    width: 50%;
+    float: left;
+    position: relative;
+    top: -8px;
+  }
+
+  .rounded:nth-of-type(5) {
+    width: 50%;
+    float: right;
+    position: relative;
+    top: -8px;
+  }
+
+  footer {
+    padding-top: 150px;
+    border: none;
+  }
+
+  footer p {
+    margin-left: 20px;
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+@media screen and (max-width:991px){
+
+
+  .button {
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 100%;
+    border: 1px solid;
+    padding: 5px;
+    background: #BDBEB8;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 479px){
+
+  .button {
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 100%;
+    border: 1px solid;
+    padding: 4px;
+    background: #BDBEB8;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px){
+  .button {
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 100%;
+    border: 1px solid;
+    padding: 3.5px;
+    background: #BDBEB8;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+  }
+
+  .overlay a {
+    font-size: 0.9rem;
+  }
+}

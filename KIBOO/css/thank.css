@@ -1,0 +1,179 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+        background: linear-gradient(to top left, rgba(236, 240, 241, 0.55), rgba(255, 255, 255, 0.45)),
+        url('../img/city.jpeg') ;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        opacity: 1;
+}
+
+.right p {
+  padding-top: 50px;
+  float: left;
+  position: relative;
+  top: -50px;
+  margin-left: 15px;
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.left li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  padding-bottom: 19px;
+  position: relative;
+  /* top: -50px; */
+  float: right;
+  text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  padding-top: 99px;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Tillana', cursive;
+}
+
+.left a {
+  color: #000;
+}
+
+p{
+
+  padding-top: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Tillana', cursive;
+}
+
+.clearfix:after {
+  content:'';
+  display: table;
+  clear: both;
+}
+
+footer {
+  padding-top: 100px;
+}
+
+/*  media query*/
+@media (max-width:2060px){
+  html {
+          background: linear-gradient(to top left, rgba(236, 240, 241, 0.55), rgba(255, 255, 255, 0.45)),
+          url('../img/city.jpeg') ;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          opacity: 1;
+  }
+
+  .right p {
+    color: #000;
+  }
+}
+
+@media (max-width: 1025px){
+  html {
+          background: linear-gradient(to top left, rgba(236, 240, 241, 0.55), rgba(255, 255, 255, 0.45)),
+          url('../img/city.jpeg') ;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center center;
+          opacity: 1;
+  }
+
+  .right p{
+    font-size: 1rem;
+  }
+
+  .left li {
+    font-size: 1rem;
+  }
+
+  h1 {
+    padding-top: 299px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Tillana', cursive;
+  }
+  .right p {
+    color: #000;
+  }
+
+  p{
+
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Tillana', cursive;
+  }
+
+}
+
+ @media screen and (max-width: 991px){
+   h1 {
+     padding-top: 199px;
+     font-size: 3rem;
+     text-align: center;
+     font-family: 'Tillana', cursive;
+   }
+
+
+   .right p{
+     font-size: 1rem;
+     color: black;
+   }
+
+   .left li {
+     font-size: 1rem;
+   }
+
+   p{
+
+     padding-top: 50px;
+     text-align: center;
+     font-size: 3rem;
+     font-family: 'Tillana', cursive;
+   }
+ }
+
+  @media screen and (max-width: 479px){
+
+    .right p{
+      font-size: 1rem;
+      color: black;
+    }
+
+    .left li {
+      font-size: 1rem;
+    }
+    h1 {
+      padding-top: 90px;
+      font-size: 2.5rem;
+      text-align: center;
+      font-family: 'Tillana', cursive;
+    }
+
+
+    p{
+      padding-top: 10px;
+      text-align: center;
+      font-size: 2rem;
+      font-family: 'Tillana', cursive;
+    }
+  }

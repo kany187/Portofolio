@@ -1,0 +1,20 @@
+/* 
+header {
+
+  transition-duration: 2s;
+}
+
+header:hover {
+  background-image: url("./img/brazza.jpg");
+  background-size: cover;
+  background-position: center center;
+} */
+
+
+.rotate {
+  transition: transform .4s;
+}
+
+.rotate:hover {
+  transform: skewX(20deg);
+}
